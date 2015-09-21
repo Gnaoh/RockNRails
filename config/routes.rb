@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 get "/records" => "records#index"
 get "/records/new" => "records#new"
-get "/records" => "records#create"
+post "/records" => "records#create"
 get "/records/:id" => "records#show"
 
 
