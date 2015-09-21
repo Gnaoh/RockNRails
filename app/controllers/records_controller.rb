@@ -1,12 +1,14 @@
 class RecordsController < ApplicationController
   def index
-  	@record = Record.all
+  	@records = Record.all
   end
 
   def show
+  	@record = Record.find(params[:id])
   end
 
   def new
+  	@record = Record.new
   end
 
   def create
